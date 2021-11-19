@@ -33,7 +33,7 @@ person:
   score:
     english: 80
     math: 90
-
+    
   #Set
   salarys:
     - 9999.99
@@ -53,3 +53,7 @@ person:
 server:
   address: 127.0.0.1
   port: 80
+  
+#开启自动配置报告
+debug:
+  true
