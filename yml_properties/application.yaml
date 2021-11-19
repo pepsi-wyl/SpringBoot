@@ -1,0 +1,55 @@
+####属性配置####
+pet:
+  name: Tomcat
+
+person:
+  #String
+  userName: zhazha
+
+  #Boolean
+  boss: true
+
+  #Date
+  birth: 2001/03/17
+
+  #Integer
+  age: 18
+
+  #Object
+  pet:
+    name: Tomcat
+
+  #Array
+  #interests: [篮球，足球]
+  interests:
+    - 篮球
+    - 足球
+
+  #List
+  animal: [ 猫，狗 ]
+
+  #Map
+  #score: {english:80,math:90}
+  score:
+    english: 80
+    math: 90
+
+  #Set
+  salarys:
+    - 9999.99
+    - 9999.98
+
+  #MapList
+  allPets:
+    sick:
+      - { name: 阿猫 }
+      - name: 阿狗
+    health:
+      -name: [ { name: dog },{ name: cat } ]
+
+  ####属性配置####
+  
+#配置服务器IP和端口号
+server:
+  address: 127.0.0.1
+  port: 80
