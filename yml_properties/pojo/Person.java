@@ -16,8 +16,11 @@ import java.util.Set;
  * @author by wyl
  * @date 2021/11/14.19点44分
  */
-@ConfigurationProperties(prefix = "person")    //读取配置文件中的数据 前缀为person
-@Component(value = "person")                   //注册组件
+
+@Component(value = "person")                      //注册组件
+//@EnableConfigurationProperties(Person.class)    //开启Person配置绑定功能 组件没有注册时在config类中进行配置
+
+@ConfigurationProperties(prefix = "person")       //读取配置文件中的数据 前缀为person
 
 @Data
 @AllArgsConstructor
