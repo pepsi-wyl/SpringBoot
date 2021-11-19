@@ -1,0 +1,5 @@
+<!--引入validation的场景启动器-->
+<dependency>
+     <groupId>org.springframework.boot</groupId>
+     <artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
