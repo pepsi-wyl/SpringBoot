@@ -1,0 +1,25 @@
+
+
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.ConfigurableApplicationContext;
+
+/**
+ * 主程序类
+ */
+ 
+/*
+ scanBasePackages  修改该Boot程序扫描组件的包  默认为Application的所有同级包
+ */
+ 
+@SpringBootApplication(scanBasePackages = "com.wyl")    //标注这个类是SpringBoot的应用   
+public class MainApplication {
+    //将SpringBoot应用启动
+    public static void main(String[] args) {
+        //返回IOC容器
+        ConfigurableApplicationContext run = SpringApplication.run(MainApplication.class, args);
+    }
+}
+
+
