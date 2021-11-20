@@ -37,8 +37,8 @@ import org.springframework.context.annotation.ImportResource;
 
 //@EnableConfigurationProperties(xxx.class)                     //开启xxx类配置绑定功能 (xxx组件没有注册才配置)
 
-@Import({DBHelper.class})                                       //给容器中自动创建出这个类型的组件，名称为全类名
-@ImportResource("classpath:applicationContext.xml")             //引入XML配置文件
+@Import({DBHelper.class})                                       //给容器中自动创建出这个类型的组件，名称为全类名   导入额外的config配置类
+@ImportResource("classpath:applicationContext.xml")             //引入XML配置文件                               导入额外的xml配置类
 
 @Configuration(value = "myConfig", proxyBeanMethods = true)     //告诉SpringBoot此类为配置类==配置文件
 public class MyConfig {
