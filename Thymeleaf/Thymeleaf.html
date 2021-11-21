@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"> <!--引入Thymeleaf的命名空间-->
+<head>
+    <meta charset="UTF-8">
+    <title>Thymeleaf</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+
+<!--
+${...}
+-->
+<!--不转译-->
+<div th:text="${msg}"></div>
+<!--转译-->
+<div th:utext="${msg}"></div>
+
+<!--
+*{...}
+-->
+<div th:object="${wyl}">
+    <p th:text="*{id}"></p>
+    <p th:text="*{name}"></p>
+    <p th:text="*{password}"></p>
+</div>
+
+<!--
+list
+-->
+<h3 th:each="user:${list}" th:text="${user}"></h3>
+
+<!--
+url
+-->
+<h2>
+    <a href="" th:href="${url}">主页</a> <br/>
+    <a href="" th:href="@{${url2}}">主页</a>
+</h2>
+
+</body>
+</html>
